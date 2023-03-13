@@ -1,0 +1,117 @@
+/* body{
+    background:#5BB9B8;
+    font-family:monospace;
+  }
+  h1{
+    text-align:center;
+    padding:20px 0px 0px 0px;
+  } */
+  /*Limit Height & Resize*/
+  .table_scroll {
+    height: auto;
+    overflow: auto;
+    resize: vertical;
+    margin:auto;
+    max-width:auto;
+  }
+  /*Div Table Setting*/
+  .css_table {
+    display: table;
+    position: relative;
+    width:100%;
+  }
+  .css_tr {
+    display: table-row;
+  }
+  .css_tr:nth-child(even) .css_td {
+    background: #f5f5f5;
+  }
+  .css_tr:nth-child(odd) .css_td {
+    background: #fff;
+  }
+  .css_td,
+  .css_th,
+  .css_sd{
+    display: table-cell;
+    padding: 8px 10px;
+    white-space:nowrap; 
+    border-bottom: 0.2px solid #fff;
+    border-right: 0.2px solid #fff;
+  }
+  .css_thead {
+    display: table-header-group;
+    font-weight: bold;
+    z-index:1;
+  }
+  .css_tfoot {
+    background-color: #eee;
+    display: table-footer-group;
+    font-weight: bold;
+  }
+  .css_tbody {
+    display: table-row-group;
+  }
+  /*Table Header Fixed */
+  .css_th, .css_sd{
+    position: sticky;
+    background-color: #202932;
+    color: #fff;
+  }
+  .css_th{
+    top: 0;
+  }
+  .css_sd{
+    left: 0;
+  }
+  .css_thead div.css_th:first-child,
+  .css_tfoot div.css_th:first-child{
+    left:0;
+    z-index:1;
+  }
+  .css_tfoot .css_th{
+    bottom:0
+  }
+  /*Responsive Div Table*/
+  @media screen and (max-width: 650px) {
+    .css_table {
+      border: 0;
+    }
+    .css_table .css_thead ,.css_table .css_tfoot{
+      display: none;
+    }
+    .css_table .css_tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+    .css_table .css_td ,.css_table .css_sd {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+      border-left: 1px solid #ddd;
+    }
+    .css_table .css_td:last-child {
+      border-bottom: 0;
+    }
+    .css_table .css_td:before,.css_table .css_sd:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .table_scroll{
+      margin:0;
+      height:auto!important;
+    }
+    .css_tr:nth-child(even) .css_td {
+    background: #fff;
+    }
+  }
+
+  .table_footer{
+    display: flex;
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  
