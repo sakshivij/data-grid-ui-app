@@ -1,19 +1,4 @@
-//import { Column, textEditor } from "react-data-grid";
 import { User } from "../models/user";
-
-/*
-
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    address: Address;
-    phone: string;
-    website: string;
-    company: Company;
-
-
-*/
 
 export const getColumns = () => {
 
